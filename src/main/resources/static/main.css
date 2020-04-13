@@ -1,0 +1,237 @@
+ /* change the background color of navigation bar */
+      .navbar-custom {
+          background-color: #ed286e;
+      }
+
+      /* change the text color of navigation bar*/
+
+      .navbar-custom .navbar-text {
+          color: rgba(255, 255, 255, .8);
+      }
+
+      /* change the link color of navigation bar */
+      .navbar-custom .navbar-nav .nav-link {
+          color: white;
+      }
+
+      /* change the color of active or hovered links of navigation bar*/
+      .navbar-custom .nav-item.active .nav-link,
+      .navbar-custom .nav-item:focus .nav-link,
+      .navbar-custom .nav-item:hover .nav-link {
+          background-color: #13070b5b;
+      }
+
+
+      /* settings for all .dropdown-menus */
+    
+      .dropdown-menu {
+          background-color: #db2565;
+          color: white;
+          border: peachpuff;
+          border-style: solid;
+          
+      }
+
+      /* settings for all .dropdown-items */
+      .dropdown-item {
+          color: rgba(255, 255, 255, .8);
+      }
+
+      /* settings for all .dropdown-items when active */
+      .dropdown-item.active, .dropdown-item:active {
+          background-color: #c01853 ;
+      }
+
+      /* settings for all list items that are hovered in .dropdown-menus */
+      .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+         
+         background-color: #13070b5b ;
+}
+
+/* Settings for big screens */
+@media screen and (min-width: 601px) {
+  div.example, span,.console-container, .console-underscore {
+    font-size:100%;
+  }
+}
+
+/* Settings for small screens */
+@media screen and (max-width: 600px) {
+  div.example, span,.console-container, .console-underscore{
+    font-size: 70%;
+  }
+} 
+
+body {
+    background-color: lightgrey;
+}
+
+
+/* Settings for text effect on main page */
+@import url(https://fonts.googleapis.com/css?family=Khula:700);
+
+.hidden {
+  opacity:0;
+}
+.console-container {
+ 
+  font-family:Khula;
+  font-size:4em;
+  text-align:center;
+  height:200px;
+  width:600px;
+  display:block;
+  position:absolute;
+  color: dimgrey;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  margin:auto;
+}
+.console-underscore {
+   display:inline-block;
+  position:relative;
+  top:-0.14em;
+  left:10px;
+}
+
+
+/* Settings for all labels, inputs, textareas and select items */
+label,
+input,
+textarea,
+select {
+    max-width: 170px;
+    width: 170px;
+    padding: 0;
+    margin: 1%;
+    box-sizing: border-box;
+
+}
+
+/* Setting for form-control class so that inputs are the same width */
+.form-control-sm {
+    width: 170px;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    display: inline;
+}
+
+
+   /* The popup form - hidden by default */
+   .form-popup {
+    display: none;
+    position: fixed;
+    bottom: 5%;
+    right: 15px;
+    border: 3px solid #1a1414;
+    z-index: 9;
+
+  }
+
+  /* Add styles to the popupform container */
+  .form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: lightgrey;
+  }
+
+  /* Full-width input fields for popup form */
+  .form-container input[type=text] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: white;
+  }
+
+
+/*Settings for Transition page loader - dots  */
+  #pageloader{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; /* center children content horizontally */
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; /* center children content vertically */
+    z-index: 10000;
+    background: lightgrey;
+}
+    
+
+.spinner {
+  width: 70px;
+  text-align: center;
+    opacity: 1;
+    transition: opacity .4s;
+}
+
+.spinner > div {
+  width: 18px;
+  height: 18px;
+  background-color:#c01853 ;
+  border-radius: 100%;
+  display: inline-block;
+  -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+  animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+}
+
+.spinner .bounce1 {
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+
+.spinner .bounce2 {
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+
+@-webkit-keyframes sk-bouncedelay {
+  0%, 80%, 100% { -webkit-transform: scale(0) }
+  40% { -webkit-transform: scale(1.0) }
+}
+
+@keyframes sk-bouncedelay {
+  0%, 80%, 100% { 
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  } 40% { 
+    -webkit-transform: scale(1.0);
+    transform: scale(1.0);
+  }
+}
+
+
+#pageloader.dimissloader{
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 1s, visibility 0s 1s;
+}
+
+html.hidescrollbar{
+  overflow: hidden;
+}
+
+html.hidescrollbar body{
+  overflow: hidden;
+}
+
+/* Outro BODY fadeout CSS class */
+body.fadeout{
+  opacity: 0;
+  transition: all 1s;
+}
+
+
+
+  
